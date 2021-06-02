@@ -1,6 +1,7 @@
-from page.auto_ria_page import googleMainPage
+from page.google_search import googleMainPage
 
 page = googleMainPage()
-page.search_item("some_text")
-page.click()
-assert page.get_amount_of_found() < 0
+page.search_item("some text")
+page.start_search()
+assert page.ass_result != "0"
+page.quit()
