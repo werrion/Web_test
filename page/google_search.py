@@ -20,4 +20,10 @@ class googleMainPage():
     def quit(self):
         driver.quit()
 
+    def screenshot_befo(self):
+        driver.save_screenshot('before_search.png')
+
+    def screenshot_after(self):
+        driver.save_screenshot('after_search.png')
+
 
